@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="user-info">
+        <div class="task-manager">task manager</div>
+        <div class="side-wrapper">
+          <div class="user-profile">
+            <img src="images/image-user.jpg" alt="" class="user-photo" />
+            <p class="user-name">Natalie Smith</p>
+            <p class="user-mail">natalie.smith@gmail.com</p>
+          </div>
+          <div class="user-notification">
+            <div class="notify">
+              <a href="#"><i class="fas fa-cog icon"></i> </a>
+            </div>
+            <div class="notify alert">
+              <a href="#"><i class="far fa-envelope icon"></i></a>
+            </div>
+            <div class="notify alert">
+              <a href="#"><i class="fas fa-bell icon"></i></a>
+            </div>
+          </div>
+          <p class="progress-status">12/34</p>
+          <div class="progress">
+            <div class="progress-bar"></div>
+          </div>
+          <div class="task-status">
+            <div class="task-stat">
+              <div class="task-number">12</div>
+              <div class="task-condition">Completed</div>
+              <div class="task-tasks">tasks</div>
+            </div>
+            <div class="task-stat">
+              <div class="task-number">22</div>
+              <div class="task-condition">To do</div>
+              <div class="task-tasks">tasks</div>
+            </div>
+            <div class="task-stat">
+              <div class="task-number">69</div>
+              <div class="task-condition">All</div>
+              <div class="task-tasks">completed</div>
+            </div>
+          </div>
+        </div>
+        <div class="side-wrapper">
+          <div class="project-title">Projects</div>
+          <div class="project-name">
+            <div class="project-department">Marketing</div>
+            <div class="project-department">Design</div>
+            <div class="project-department">Development</div>
+            <div class="project-department">Finance</div>
+          </div>
+        </div>
+        <div class="side-wrapper">
+          <div class="project-title">Team</div>
+          <div class="team__members">
+            <img
+              src="images/image-user.jpg"
+              alt=""
+              class="team__members-image"
+            />
+            <img
+              src="images/image-user.jpg"
+              alt=""
+              class="team__members-image"
+            />
+            <img
+              src="images/image-user.jpg"
+              alt=""
+              class="team__members-image"
+            />
+            <img
+              src="images/image-user.jpg"
+              alt=""
+              class="team__members-image"
+            />
+            <img
+              src="images/image-user.jpg"
+              alt=""
+              class="team__members-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="calendar-area">
+        <div class="header__calendar">
+          <div class="search-bar">
+            <i class="fa fa-search icon__blur"></i>
+            <input type="text" placeholder="Search..." />
+          </div>
+          <p>Calendar</p>
+          <div class="menu">
+            <a href="#"><i class="fas fa-ellipsis-h icon__blur"></i></a>
+          </div>
+        </div>
+        <div class="calendar-container">
+          <div class="calender-tab">
+            <div class="week-month">
+              <button class="button active">Week</button>
+              <button class="button button-month">Month</button>
+            </div>
+            <div class="month-year">
+              <div class="month-change">
+                <a href="#">
+                  <i class="fa fa-chevron-left"></i>
+                </a>
+                <div class="current-month">October</div>
+                <a href="#">
+                  <i class="fa fa-chevron-right"></i>
+                </a>
+              </div>
+              <div class="current-year">2018</div>
+            </div>
+            <div class="week-month">
+              <button class="button button-weekends">Weekends</button>
+              <button class="button button-task active">Add task</button>
+            </div>
+          </div>
+          <div class="calendar-wrapper">
+            <div id="weekdays">
+              <div class="days">Monday</div>
+              <div class="days">Tuesday</div>
+              <div class="days">Wednesday</div>
+              <div class="days">Thursday</div>
+              <div class="days">Friday</div>
+              <div class="days">Saturday</div>
+              <div class="days">Sunday</div>
+              <div class="day not-work">31</div>
+              <div class="day day-work">
+                1
+                <div class="hover-title">Marketing</div>
+                <div class="project-detail">Sales report from last month</div>
+                <div class="project-detail">Prepare offers for clients</div>
+                <div class="popup-check">
+                  <i class="fa fa-check-circle"></i>
+                </div>
+              </div>
+              <div class="day">2</div>
+              <div class="day day-work blue">
+                3
+                <div class="hover-title">Marketing</div>
+                <div class="project-detail">
+                  Create 3 illustrations for blog post about design trends
+                </div>
+                <div class="popup-check">
+                  <i class="fa fa-check-circle"></i>
+                </div>
+              </div>
+              <div class="day">4</div>
+              <div class="day">5</div>
+              <div class="day">6</div>
+              <div class="day day-work yellow">
+                7
+                <div class="project-detail develop">
+                  Take part in course about future design trends and new
+                  technologies
+                </div>
+              </div>
+              <div class="day">8</div>
+              <div class="day">9</div>
+              <div class="day">10</div>
+              <div class="day">11</div>
+              <div class="day">12</div>
+              <div class="day">13</div>
+              <div class="day">14</div>
+              <div class="day day-work">
+                15
+                <div class="hover-title">Marketing</div>
+                <div class="project-detail">
+                  Write an article about design trends
+                </div>
+                <div class="popup-check">
+                  <i class="fa fa-check-circle"></i>
+                </div>
+              </div>
+              <div class="day">16</div>
+              <div class="day day-work red">
+                17
+                <div class="hover-title">Marketing</div>
+                <div class="project-detail">
+                  Prepare financialfrom January to May
+                </div>
+                <div class="popup-check">
+                  <i class="fa fa-check-circle"></i>
+                </div>
+              </div>
+              <div class="day">18</div>
+              <div class="day">19</div>
+              <div class="day">20</div>
+              <div class="day">21</div>
+              <div class="day">22</div>
+              <div class="day">23</div>
+              <div class="day">24</div>
+              <div class="day">25</div>
+              <div class="day">26</div>
+              <div class="day">27</div>
+              <div class="day">28</div>
+              <div class="day">29</div>
+              <div class="day day-work">
+                30
+                <div class="hover-title">Marketing</div>
+                <div class="project-detail">Ceate AdWords campaign</div>
+                <div class="project-detail">Send newsletter to clients</div>
+                <div class="popup-check">
+                  <i class="fa fa-check-circle"></i>
+                </div>
+              </div>
+              <div class="day not-work">1</div>
+              <div class="day not-work">2</div>
+              <div class="day not-work">3</div>
+              <div class="day not-work">4</div>
+            </div>
+          </div>
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-check"></i>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/f1d7f888de.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
